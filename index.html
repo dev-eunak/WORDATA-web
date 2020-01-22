@@ -13,6 +13,7 @@
     <!-- css -->
     <link rel="stylesheet" href="css/reset.css">
     <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/fullpage.css">
 
     <!-- 웹 폰트 -->
     <link href="https://fonts.googleapis.com/css?family=Noto+Sans+KR:100,300,400,500,700,900&display=swap&subset=korean" rel="stylesheet">
@@ -44,5 +45,42 @@
       </div>
     </header>
     <!-- header -->
+
+    <div id="fullpage">
+      <div class="section" id="cont1">
+        빅데이터 분석과 인공지능을 활용한<br>나만의 영어 단어장 자동 생성 서비스
+      </div>
+      <!-- cont1 -->
+
+      <div class="section" id="cont2">
+        구체적인 서비스 소개
+      </div>
+      <!-- cont2 -->
+
+      <div class="section" id="cont3">
+        단어장 자동 생성 예시
+      </div>
+      <!-- cont3 -->
+
+      <div class="section" id="cont4" s>
+        서비스 관련 기타 내용
+      </div>
+      <!-- cont4 -->
+    </div>
+    <!-- contents -->
+
+    <!-- 자바스크립트 라이브러리 -->
+    <script src="js/jquery.min_1.12.4.js"></script>
+    <script src="js/fullpage.js"></script>
+
+    <script>
+    $(document).ready(function() {
+      $('#fullpage').fullpage({
+        licenseKey: 'OPEN-SOURCE-GPLV3-LICENSE',
+        autoScrolling:true,
+        scrollHorizontally: true
+      });
+    });
+    </script>
   </body>
 </html>
