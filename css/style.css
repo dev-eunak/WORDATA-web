@@ -1,7 +1,7 @@
 @charset "UTF-8";
 
 /* 레이아웃 */
-#header {width: 100%; height: 70px; background-color: white; position: fixed; z-index: 9999;}
+#header {width: 100%; height: 70px; border-bottom: 1px solid #c6c6c6; background-color: white; position: fixed; z-index: 9999;}
 
 /* 가운데 영역 */
 .container {position: relative; width: 1280px; margin: 0 auto;}
@@ -19,8 +19,23 @@
 .header .nav ul li {float: left;}
 .header .nav ul li a {display: block; padding: 19px 12px; font-size: 20px; font-weight: 700; color: #444;}
 
+/* 메인 페이지 */
 /*  콘텐츠 영역(간편하게 수정 예정) */
 #cont1 {background: #b2ebf2; width: 100vw; height: 100vh; font-size: 30px; text-align: center;}
 #cont2 {background: #80deea; width: 100vw; height: 100vh; font-size: 30px; text-align: center;}
 #cont3 {background: #26c6da; width: 100vw; height: 100vh; font-size: 30px; text-align: center;}
 #cont4 {background: #00bcd4; width: 100vw; height: 100vh; font-size: 30px; text-align: center;}
+
+/* 로그인 페이지 */
+.login_title h1 {text-align: center; font-size: 60px; margin-top: 50px; font-family: 'Luckiest Guy', cursive;}
+.wrapper {width: 500px; height: 320px; color: #000; top: 50%; left: 50%; position: absolute;
+  transform: translate(-50%, -50%); box-sizing: border-box; margin-top: 18%; border-bottom: 1px solid #CFCFCF;}
+.wrapper input {width: 100%; margin-bottom: 30px;}
+.wrapper input[type=text], .wrapper input[type=password] {
+  border: none; outline: none; border: 1px solid #c8c8c8; background: transparent; height: 50px; font-size: 18px; opacity: 1;
+  color: #000; background-color: #fff;}
+.wrapper input[type=submit] {border: none; outline: none; height: 60px; background: #80deea; color: #000; font-size: 20px;}
+.wrapper input[type=submit]:hover {cursor: pointer;}
+.wrapper a {font-size: 14px; text-decoration: none; color: #000; opacity: 0.8;}
+.bottom-text input {width: 10%; float: left; font-size: 16px;}
+.bottom-text a {float: right;}
