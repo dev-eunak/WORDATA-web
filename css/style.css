@@ -19,6 +19,16 @@
 .header .nav ul li {float: left;}
 .header .nav ul li a {display: block; padding: 19px 12px; font-size: 20px; font-weight: 700; color: #444;}
 
+/* 체크 박스 */
+.checkboxContainer input {display: none;}
+.checkboxContainer {display: inline-block; padding-left: 30px; position: relative; cursor: pointer; font-size: 13px; user-select: none;}
+.checkboxContainer .checkmark {display: inline-block; width: 18px; height: 18px; background: #eee; position: absolute; left: 0; top: 0; border-radius: 3px;}
+.checkboxContainer input:checked + .checkmark {background-color: #2196fc;}
+.checkboxContainer:hover .checkmark {background-color: #ccc;}
+/* .checkboxContainer input:checked + .checkmark:atfer {
+  content: ""; position: absolute; height: 4px; width: 9px; border-left: 2px solid white; border-bottom: 2px solid white;
+  top: 45%; left: 50%; transform: translate(-50%, -50%) rotate(-45deg);} */
+
 /* 메인 페이지 */
 /*  콘텐츠 영역(간편하게 수정 예정) */
 #cont1 {background: #b2ebf2; width: 100vw; height: 100vh; font-size: 30px; text-align: center;}
@@ -28,9 +38,9 @@
 
 /* 로그인 페이지 */
 .login_title h1 {text-align: center; font-size: 60px; margin-top: 50px; font-family: 'Luckiest Guy', cursive;}
-.wrapper {width: 500px; height: 320px; color: #000; top: 50%; left: 50%; position: absolute;
-  transform: translate(-50%, -50%); box-sizing: border-box; margin-top: 18%; border-bottom: 1px solid #CFCFCF;}
-.wrapper input {width: 100%; margin-bottom: 30px;}
+.wrapper {width: 500px; height: 300px; color: #000; top: 50%; left: 50%; position: absolute;
+  transform: translate(-50%, -50%); box-sizing: border-box; margin-top: 15%; border-bottom: 1px solid #CFCFCF;}
+.wrapper input {width: 100%; margin-bottom: 25px;}
 .wrapper input[type=text], .wrapper input[type=password] {
   border: none; outline: none; border: 1px solid #c8c8c8; background: transparent; height: 50px; font-size: 18px; opacity: 1;
   color: #000; background-color: #fff;}
@@ -39,3 +49,7 @@
 .wrapper a {font-size: 14px; text-decoration: none; color: #000; opacity: 0.8;}
 .bottom-text input {width: 10%; float: left; font-size: 16px;}
 .bottom-text a {float: right;}
+.advertisement {width: 100%; height: 140px; background-color: #d96b6c; margin-top: 80px; font-family: 'Nanum Pen Script', cursive;}
+.advertisement a {color: #fff; text-align: center;}
+.info_ad a h1 {font-size: 34px;}
+.info_ad a h2 {font-size: 24px;}
