@@ -38,18 +38,29 @@
 
 /* 로그인 페이지 */
 .login_title h1 {text-align: center; font-size: 60px; margin-top: 50px; font-family: 'Luckiest Guy', cursive;}
-.wrapper {width: 500px; height: 300px; color: #000; top: 50%; left: 50%; position: absolute;
+.login .wrapper {width: 500px; height: 300px; color: #000; top: 50%; left: 50%; position: absolute;
   transform: translate(-50%, -50%); box-sizing: border-box; margin-top: 15%; border-bottom: 1px solid #CFCFCF;}
-.wrapper input {width: 100%; margin-bottom: 25px;}
-.wrapper input[type=text], .wrapper input[type=password] {
+.login .wrapper input {width: 100%; margin-bottom: 25px;}
+.login .wrapper input[type=text], .wrapper input[type=password] {
   border: none; outline: none; border: 1px solid #c8c8c8; background: transparent; height: 50px; font-size: 18px; opacity: 1;
   color: #000; background-color: #fff;}
-.wrapper input[type=submit] {border: none; outline: none; height: 60px; background: #80deea; color: #000; font-size: 20px;}
-.wrapper input[type=submit]:hover {cursor: pointer;}
-.wrapper a {font-size: 14px; text-decoration: none; color: #000; opacity: 0.8;}
-.bottom-text input {width: 10%; float: left; font-size: 16px;}
-.bottom-text a {float: right;}
-.advertisement {width: 100%; height: 140px; background-color: #d96b6c; margin-top: 80px; font-family: 'Nanum Pen Script', cursive;}
-.advertisement a {color: #fff; text-align: center;}
-.info_ad a h1 {font-size: 34px;}
-.info_ad a h2 {font-size: 24px;}
+.login .wrapper input[type=submit] {border: none; outline: none; height: 60px; background: #80deea; color: #000; font-size: 20px;}
+.login .wrapper input[type=submit]:hover {cursor: pointer;}
+.login .wrapper a {font-size: 14px; text-decoration: none; color: #000; opacity: 0.8;}
+.login .bottom-text input {width: 10%; float: left; font-size: 16px;}
+.login .bottom-text a {float: right;}
+.login .advertisement {width: 100%; height: 140px; background-color: #d96b6c; margin-top: 80px; font-family: 'Nanum Pen Script', cursive;}
+.login .advertisement a {color: #fff; text-align: center;}
+.login .info_ad a h1 {font-size: 34px;}
+.login .info_ad a h2 {font-size: 24px;}
+
+/* 회원가입 페이지 */
+.joinMembership {width: 100%; margin-top: 140px;}
+.joinMembership p {font-size: 18px; margin-bottom: 10px;}
+.joinMembership .wrapper input {width: 100%; margin-bottom: 25px;}
+.joinMembership input[type=text], .joinMembership input[type=password] {
+  border: none; outline: none; border: 1px solid #c8c8c8; background: transparent; height: 48px;
+  font-size: 18px; opacity: 1; color: #000; background-color: #fff;}
+.joinMembership input[type=submit] {border: none; outline: none; height: 55px; background: #80deea; color: #000; font-size: 20px; margin-top: 15px;}
+.joinMembership .wrapper {width: 500px; color: #000; top: 50%; left: 50%; position: absolute;
+  transform: translate(-50%, -50%); box-sizing: border-box; margin-top: 15%;}
