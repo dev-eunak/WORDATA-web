@@ -33,29 +33,115 @@
     </div>
     <!-- header -->
 
-    <div class="joinMembership">
-      <div class="container">
-        <div class="row">
-          <div class="wrapper">
-            <form class="" action="index.html" method="post">
-              <p>아이디(학번)</p>
-              <input type="text" name="" value="" placeholder="">
-              <p>비밀번호</p>
-              <input type="password" name="" value="" placeholder="">
-              <p>비밀번호 재확인</p>
-              <input type="password" name="" value="" placeholder="">
-              <p>이름</p>
-              <input type="text" name="" value="" placeholder="">
-              <p>학부(학과)</p>
-              <input type="text" name="" value="" placeholder="">
+    <section id="joinMembership">
+      <div class="join_form">
+        <div class="container">
+          <div class="row">
+            <div class="joinBox">
+              <div class="join_row">
+                <h3 class="join_title">
+                  <label for="id">아이디(학번)</label>
+                </h3>
+                <span class="jm_box int_user">
+                  <input type="text" id="id" name="" value="" class="int">
+                </span>
+              </div>
+              <!-- id -->
+              <div class="join_row">
+                <h3 class="join_title">
+                  <label for="pass">비밀번호<label>
+                </h3>
+                <span class="jm_box int_user">
+                  <input type="password" id="pass" name="" value="" class="int">
+                </span>
+              </div>
+              <!-- password -->
+              <div class="join_row">
+                <h3 class="join_title">
+                  <label for="passCheck">비밀번호 확인</label>
+                </h3>
+                <span class="jm_box int_user">
+                  <input type="password" id="passCheck" name="" value="" class="int">
+                </span>
+              </div>
+              <!-- password check -->
+              <div class="join_row">
+                <h3 class="join_title">
+                  <label for="name">이름</label>
+                </h3>
+                <span class="jm_box int_user">
+                  <input type="text" id="name" name="" value="" class="int">
+                </span>
+              </div>
+              <!-- name -->
+              <div class="join_row">
+                <h3 class="join_title">
+                  <label for="major">학부(학과)</label>
+                </h3>
+                <span class="jm_box major_code">
+                <select class="major" id="major" name="">
+                  <option value="" selected>선택안함</option>
+                  <option value="">--------------------</option>
+                  <option value="">인문융합자율학부</option>
+                  <option value="">신학과</option>
+                  <option value="">영어학과</option>
+                  <option value="">일어일본학과</option>
+                  <option value="">중어중국학과</option>
+                  <option value="">--------------------</option>
+                  <option value="">사회융합자율학부</option>
+                  <option value="">사회과학부</option>
+                  <option value="">사회복지학과</option>
+                  <option value="">경영학과</option>
+                  <option value="">--------------------</option>
+                  <option value="">미디어컨텐츠융합자율학부</option>
+                  <option value="">디지털컨텐츠학과</option>
+                  <option value="">신문방송학과</option>
+                  <option value="">--------------------</option>
+                  <option value="">IT융합자율학부</option>
+                  <option value="">컴퓨터공학과</option>
+                  <option value="">소프트웨어공학과</option>
+                  <option value="">정보통신공학과</option>
+                  <option value="">글로컬IT학과</option>
+                </select>
+                </span>
+              </div>
+              <!-- major -->
               <input type="submit" name="" value="회원가입">
-            </form>
-            <!-- joinbox -->
+            </div>
+            <!-- joinBox -->
           </div>
-          <!-- wrapper -->
         </div>
       </div>
-    </div>
+    </section>
     <!-- joinMembership -->
+
+    <footer id="footer">
+        <div class="container">
+          <div class="row">
+            <div class="footer_info">
+              <ul>
+                <li>
+                  <a href="#">이용약관</a>
+                </li>
+                <li>
+                  <a href="#">서비스 소개</a>
+                </li>
+                <li>
+                  <a href="#">개발자 소개</a>
+                </li>
+                <li>
+                  <a href="index.html">워다타</a>
+                </li>
+              </ul>
+              <address class="">
+                <p>Copyright 2020 by WORDATA develpoer Inc. All right reserved</p>
+              </address>
+            </div>
+            <!-- footer_info -->
+          </div>
+        </div>
+    </footer>
+    <!-- footer -->
+
   </body>
 </html>

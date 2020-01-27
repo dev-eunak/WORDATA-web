@@ -2,6 +2,8 @@
 
 /* 레이아웃 */
 #header {width: 100%; height: 70px; border-bottom: 1px solid #c6c6c6; background-color: white; position: fixed; z-index: 9999;}
+#joinMembership {margin: 0 auto;}
+#footer {clear: both; padding: 10px 0 15px 0; text-align: center;}
 
 /* 가운데 영역 */
 .container {position: relative; width: 1280px; margin: 0 auto;}
@@ -12,12 +14,18 @@
 .header h1 {float: left;}
 .header h1 em {padding: 12px 8px 3px 0; display: inline-block;}
 .header h1 em img {width: 200px;}
-
 .header .info_div {position: absolute; font-size: 22px; font-weight: 700; color: #444; border: 1px solid #000; padding: 5px 9px; left: 45%; top: 20%;}
-
 .header .nav {float: right;}
 .header .nav ul li {float: left;}
 .header .nav ul li a {display: block; padding: 19px 12px; font-size: 20px; font-weight: 700; color: #444;}
+
+/* 푸터 영역 */
+.footer_info {padding: 20px 0 5px; width: 80%; margin: 0 auto; font-size: 14px;}
+.footer_info ul {padding: 15px 0 5px;}
+.footer_info li {position: relative; display: inline; padding-right: 10px; white-space: nowrap;}
+.footer_info li:after {content: ''; position: absolute; right: 5px; top: 5px; width: 1px; height: 11px; background: #8f8f8f;}
+.footer_info li:last-child:after {width: 0; height: 0;}
+.footer_infor address p {color: #8f8f8f; padding-bottom: 15px;}
 
 /* 체크 박스 */
 .checkboxContainer input {display: none;}
@@ -41,7 +49,7 @@
 .login .wrapper {width: 500px; height: 300px; color: #000; top: 50%; left: 50%; position: absolute;
   transform: translate(-50%, -50%); box-sizing: border-box; margin-top: 15%; border-bottom: 1px solid #CFCFCF;}
 .login .wrapper input {width: 100%; margin-bottom: 25px;}
-.login .wrapper input[type=text], .wrapper input[type=password] {
+.login .wrapper input[type=text], .login .wrapper input[type=password] {
   border: none; outline: none; border: 1px solid #c8c8c8; background: transparent; height: 50px; font-size: 18px; opacity: 1;
   color: #000; background-color: #fff;}
 .login .wrapper input[type=submit] {border: none; outline: none; height: 60px; background: #80deea; color: #000; font-size: 20px;}
@@ -55,12 +63,15 @@
 .login .info_ad a h2 {font-size: 24px;}
 
 /* 회원가입 페이지 */
-.joinMembership {width: 100%; margin-top: 140px;}
-.joinMembership p {font-size: 18px; margin-bottom: 10px;}
-.joinMembership .wrapper input {width: 100%; margin-bottom: 25px;}
-.joinMembership input[type=text], .joinMembership input[type=password] {
-  border: none; outline: none; border: 1px solid #c8c8c8; background: transparent; height: 48px;
-  font-size: 18px; opacity: 1; color: #000; background-color: #fff;}
-.joinMembership input[type=submit] {border: none; outline: none; height: 55px; background: #80deea; color: #000; font-size: 20px; margin-top: 15px;}
-.joinMembership .wrapper {width: 500px; color: #000; top: 50%; left: 50%; position: absolute;
-  transform: translate(-50%, -50%); box-sizing: border-box; margin-top: 15%;}
+label {cursor: default;}
+.joinBox {width: 510px; margin: 0 auto;}
+.join_title {margin: 22px 0 8px; font-size: 18px; font-weight: 500;}
+.jm_box {display: block; position: relative; width: 100%; height: 55px; border: 1px solid #c8c8c8;
+  padding: 10px 14px 10px 14px; box-sizing: border-box; background: #fff; vertical-align: top;}
+.jm_box .int_user {padding-right: 110px;}
+.join_row .int {display: block; position: relative; width: 100%; height: 32px; line-height: 32px;
+  border: none; background: #fff; font-size: 18px; box-sizing: border-box; z-index: 10;}
+.join_row .major_code {display: block; width: 100%;box-sizing: border-box;}
+.join_row .major {width: 100%; height: 32px; font-size: 16px; line-height: 20px; color: #000; border: none;}
+.joinBox input[type=submit] {border: none; outline: none; width: 100%; height: 55px;
+  background: #80deea; color: #000; font-size: 20px; margin: 30px 0 20px; cursor: pointer;}
