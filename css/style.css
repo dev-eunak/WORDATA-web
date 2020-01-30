@@ -40,11 +40,7 @@
   top: 45%; left: 50%; transform: translate(-50%, -50%) rotate(-45deg);} */
 
 /* 메인 페이지 */
-/*  콘텐츠 영역(간편하게 수정 예정) */
-#cont1 {background: #b2ebf2; width: 100vw; height: 100vh; font-size: 30px; text-align: center;}
-#cont2 {background: #80deea; width: 100vw; height: 100vh; font-size: 30px; text-align: center;}
-#cont3 {background: #26c6da; width: 100vw; height: 100vh; font-size: 30px; text-align: center;}
-#cont4 {background: #00bcd4; width: 100vw; height: 100vh; font-size: 30px; text-align: center;}
+/*  콘텐츠 영역 */
 
 /* 로그인 페이지 */
 .login_title h1 {text-align: center; font-size: 60px; margin-top: 50px; font-family: 'Luckiest Guy', cursive;}
