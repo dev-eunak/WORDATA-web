@@ -16,44 +16,117 @@
 
     <!-- 웹 폰트 -->
     <link href="https://fonts.googleapis.com/css?family=Noto+Sans+KR:100,300,400,500,700,900&display=swap&subset=korean" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Luckiest+Guy&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Gaegu:300,400,700&display=swap&subset=korean" rel="stylesheet">
 
   </head>
   <body>
-    <header id="header">
+    <section id="header">
       <div class="container">
         <div class="row">
-          <div class="header clearfix">
-            <h1>
-              <a href="index.html">
-                <em><img src="img/main_title.jpg" alt="WORDATA"></em>
-              </a>
-            </h1>
-            <div class="info_div">
-              <a href="developer.html">개발자 소개</a>
+          <div class="header_up">
+            <div class="main">
+              <div class="main_title">
+                <a href="index.html">
+                  <h1>WORDATA</h1>
+                </a>
+              </div>
+              <nav class="nav">
+                 <ul class="clearfix">
+                   <li><a href="joinMembership.html">회원가입</a></li>
+                   <li><a href="login.html">로그인</a></li>
+                 </ul>
+               </nav>
             </div>
-            <nav class="nav">
-              <ul class="clearfix">
-                <li><a href="#">파일 업로드</a></li>
-                <li><a href="#">나만의 단어장</a></li>
-                <li><a href="joinMembership.html">회원가입</a></li>
-                <li><a href="login.html">로그인</a></li>
-              </ul>
-            </nav>
+            <!-- //main -->
           </div>
+          <!-- header_up -->
         </div>
       </div>
-    </header>
+      <div class="header_dowm">
+         <div class="title">
+           <h1>빅데이터 분석과 인공지능을 활용한<br>나만의 단어장 자동 생성 서비스</h1>
+         </div>
+         <div class="button">
+           <a href="" class="btn">데이터 분석하기</a>
+         </div>
+      </div>
+      <!-- header_dowm -->
+    </section>
     <!-- header -->
 
-    <section id="contents">
-      <div class="container">
-        <div class="row">
-          <div class="main_intro">
+    <section id="service">
+        <div class="container">
+          <div class="row">
+            <div class="service_title">
+              <h1>워다타(WORDATA) 서비스 소개</h1>
+              <p>외국어 정보 학습자를 위한 국내최초 문서 텍스트 데이터 마이닝과<br>인공지능(RNN) 모델을 활용한 단어장 자동 생성 웹 서비스 플랫폼</p>
+            </div>
+            <div class="service_cont">
+              <div class="developer_chart">
+                <div class="chart_cont">
+                    <div style="margin-right: 100px;">
+                        <div class="poster">
 
+                        </div>
+                    </div>
+                    <div style="margin-right: 100px;">
+                        <div class="poster">
+
+                        </div>
+                    </div>
+                    <div style="margin-right: 0px;">
+                        <div class="poster">
+
+                        </div>
+                    </div>
+                </div>
+                <!-- // up chart_cont-->
+              </div>
+            </div>
           </div>
         </div>
-      </div>
     </section>
+    <!-- content1 -->
+
+    <section id="content2">
+        <div class="container">
+          <div class="row">
+            <div class="main_intro">
+              <!-- 메인 페이지 컨텐츠 부분 -->
+            </div>
+          </div>
+        </div>
+    </section>
+    <!-- content2 -->
+
+    <footer id="footer">
+        <div class="container">
+          <div class="row">
+            <div class="footer_info">
+              <ul>
+                <li>
+                  <a href="#">이용약관</a>
+                </li>
+                <li>
+                  <a href="#">서비스 소개</a>
+                </li>
+                <li>
+                  <a href="#">개발자 소개</a>
+                </li>
+                <li>
+                  <a href="index.html">워다타</a>
+                </li>
+              </ul>
+              <address class="">
+                <p>Copyright 2020 by WORDATA develpoer Inc. All right reserved</p>
+              </address>
+            </div>
+            <!-- footer_info -->
+          </div>
+        </div>
+    </footer>
+    <!-- footer -->
 
     <!-- 자바스크립트 라이브러리 -->
     <script src="js/jquery.min_1.12.4.js"></script>
