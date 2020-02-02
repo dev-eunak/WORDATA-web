@@ -4,12 +4,12 @@
 #header {background-image: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url("../img/main.png");
  height: 100vh; background-size: cover; background-position: center;}
 #joinMembership {margin: 0 auto;}
-#footer {clear: both; padding: 10px 0 15px 0; text-align: center; background-color: #E4E4E4;}
+#footer {clear: both; padding: 10px 0 15px 0; text-align: center; background-color: #EEEEEE;}
 
 #service {width: 100%; height: 500px; padding: 50px 0;}
 #achievement {width: 100%; height: 420px; padding: 25px 0; background-color: #E4E4E4; font-family: 'Yeon Sung', cursive;}
 #analysis {width: 100%; height: 600px; padding: 40px 0;}
-#developer {width: 100%; height: 600px; padding: 50px 0; background-color: #E4E4E4;}
+#developer {width: 100%; height: 800px; padding: 40px 0; background-color: #E4E4E4;}
 #video {width: 100%; height: 560px; padding: 40px 0;}
 
 
@@ -51,7 +51,7 @@
   top: 45%; left: 50%; transform: translate(-50%, -50%) rotate(-45deg);} */
 
 /* 메인 페이지 */
-/*  콘텐츠 영역 */
+/*  서비스 영역 */
 .cont_title {width: 100%; text-align: center;}
 .cont_title h1 {font-size: 28px; font-weight: 700;}
 .cont_title p {font-size: 20px; padding: 15px 0 10px 0;}
@@ -73,6 +73,7 @@
 .highright::before {content: ''; position: absolute; display: block; top: 0; left: -100%; width: 100%; height: 100%; background: rgba(250, 244, 192,.8); transition: all .35s; z-index:1;}
 .cont_info:hover .highright::before {left: 0;}
 
+/* 역사,비전 영역 */
 .wd_title h1 {font-size: 34px; text-align: center; font-weight: 700;}
 .achievement_info {padding: 20px 0 15px 120px; width: 550px; float: left;}
 .achievement_info .word h2 {font-size: 30px; font-weight: 500;}
@@ -84,6 +85,30 @@
 .vision {float: right;  padding: 20px 110px 15px 0; margin-top: 80px;}
 .vision p {font-size: 30px; text-align: center;}
 
+/* 개발자 소개 영역 */
+.dev_cont {padding: 20px 0;}
+.dev_cont .devloper {float: left; width: 50%; padding: 12px 0; display: inline-block;}
+.dev_cont .devloper .dev_img {float: left;}
+.dev_cont .devloper .dev_img img {width: 220px; height: 220px; max-width: 100%;}
+.dev_cont .devloper .dev_intro {float: right; width: 380px; height: 218px; border: 1px solid #969696; background-color: #EEEEEE; margin-right: 20px;}
+.dev_cont .devloper .dev_intro .own {height: 110px; padding: 10px 15px;}
+.dev_cont .devloper .dev_intro h1 {font-size: 23px; font-weight: 700; padding: 10px 15px 0 15px;}
+.dev_cont .devloper .dev_intro ul li {font-size: 15px;}
+.dev_cont .devloper .dev_intro h2 {font-size: 18px; padding: 0 15px;}
+.dev_cont .devloper .dev_intro p {font-size: 32px; text-align: center; line-height: 218px; font-family: 'Yeon Sung', cursive;}
+
+.edge {position: relative; display: inline-block;}
+.edge span.text {position: absolute; top: 50%; left: 0; transform: translateY(-50%); display: none;
+  width: 100%; font-size: 42px; text-align: center; color: #FAF4C0; font-family: 'Yeon Sung', cursive;}
+.edge::before, .edge::after {content: ''; position: absolute; top: 50%; left: 50%;
+width: 90%; height: 90%; transform: translate(-50%, -50%); transition: all .8s;}
+.edge::before {border-top: 2px solid #FAF4C0; border-bottom: 2px solid #FAF4C0; width: 0;}
+.edge::after {border-left: 2px solid #FAF4C0; border-right: 2px solid #FAF4C0; height: 0;}
+.edge:hover span.text {display: block;}
+.edge:hover::before {width: 90%;}
+.edge:hover::after {height: 91%;}
+
+/* 소개영상 영역 */
 .video_cont {text-align: center;}
 .video_cont video {display: inline-block;}
 .video_cont p {font-size: 16px; margin-top: 25px;}
