@@ -23,8 +23,15 @@
 .header_up .main {max-width: 1200px; margin: auto;}
 .header_up .main_title h1 {float: left; height: auto; line-height: 100px; font-size: 50px; color: #fff; font-family: 'Luckiest Guy', cursive;}
 .header_up .nav {float: right;}
-.header_up .nav ul li {float: left;}
-.header_up .nav ul li a {display: block; line-height: 100px; padding: 0 10px; font-size: 20px; font-weight: 700; color: #fff;}
+.header_up .navnav { height: 100%; width: 0; position: fixed; z-index: 3; top: 0; right: 0;
+  background-color: #D5D5D5; opacity: .9; overflow-x: hidden; padding-top: 60px; transition: 0.7s;}
+.header_up .navnav a { display: block; padding: 15px 30px; font-size: 26px; font-weight: 700;
+  text-decoration: none; color: #353535; height: 35px; font-family: 'Yeon Sung', cursive; }
+.header_up .navnav a:hover { color: #000; transition: 0.4s;}
+.header_up .navnav .menu_info { border-bottom: 1px solid #5D5D5D; padding: 15px 30px;}
+.header_up .navnav .close {position: absolute; top: 0; font-size: 30px}
+.header_up .slide a {color: #fff; font-size: 36px;}
+.header_up .nav #nav_content {padding: 20px; transition: 0.7s; overflow: hidden;}
 .header_dowm {width: 100%;}
 .header_dowm .title {position: absolute; top: 50%; left: 50%; transform: translate(-50%, -50%);}
 .header_dowm .title h1 {color: #fff; font-size: 44px; text-align: center; font-family: 'Gaegu', cursive;}

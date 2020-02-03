@@ -33,10 +33,22 @@
                 </a>
               </div>
               <nav class="nav">
-                 <ul class="clearfix">
-                   <li><a href="joinMembership.html">회원가입</a></li>
-                   <li><a href="login.html">로그인</a></li>
-                 </ul>
+                 <div id="nav_content">
+                  <span class="slide">
+                    <a href="#" onclick="openSlideMenu()">
+                      <i class="fas fa-bars"></i>
+                    </a>
+                  </span>
+                  <div id="menu" class="navnav">
+                    <a href="#" class="close" onclick="closeSlideMenu()">
+                      <i class="fas fa-times"></i>
+                    </a>
+                    <a href="login.html" class="menu_info">&#10003; 로그인</a>
+                    <a href="joinMembership.html" class="menu_info">&#10003; 회원가입</a>
+                    <a href="#" class="menu_info">&#10003; 나만의 단어장</a>
+                  </div>
+                </div>
+                <!-- nav_content -->
                </nav>
             </div>
             <!-- //main -->
@@ -294,13 +306,13 @@
                   <a href="#">이용약관</a>
                 </li>
                 <li>
-                  <a href="#service">서비스 소개</a>
+                  <a href="#service">서비스 안내</a>
                 </li>
                 <li>
                   <a href="#developer">개발자 소개</a>
                 </li>
                 <li>
-                  <a href="index.html">워다타</a>
+                  <a href="index.html">Q&amp;A</a>
                 </li>
               </ul>
               <address class="">
@@ -315,5 +327,16 @@
 
     <!-- 자바스크립트 라이브러리 -->
     <script src="js/jquery.min_1.12.4.js"></script>
+    <script defer src="https://use.fontawesome.com/releases/v5.2.0/js/all.js"></script>
+    <script>
+      function openSlideMenu(){
+        document.getElementById('menu').style.width = '250px';
+        document.getElementById('nav_content').style.marginLeft = '250px';
+      }
+      function closeSlideMenu(){
+        document.getElementById('menu').style.width = '0';
+        document.getElementById('nav_content').style.marginLeft = '0';
+      }
+    </script>
   </body>
 </html>
