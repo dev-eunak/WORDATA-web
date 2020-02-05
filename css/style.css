@@ -14,6 +14,7 @@
 #video {width: 100%; height: 560px; padding: 40px 0;}
 
 #faq {width: 100%;}
+#terms {width: 100%;}
 
 /* 가운데 영역 */
 .container {position: relative; width: 1280px; margin: 0 auto;}
@@ -166,10 +167,19 @@ label {cursor: default;}
 /* FAQ(자주묻는 질문) 페이지 */
 .faq_info {text-align: center;}
 .fqp_cont {width: 900px; height: 700px; padding: 20px 0; display: inline-block;}
-.fqp_cont h1 {font-size: 24px; font-weight: 500; text-align: left; padding: 20px 0;}
+.fqp_cont h1 {font-size: 28px; font-weight: 500; text-align: left; padding: 20px 0;}
 .fqp_cont .accordion input[id*="answer"] {display: none;}
 .fqp_cont .accordion input[id*="answer"] + label {display: block; padding: 20px 10px; border-bottom: 1px solid #8C8C8C; color: #000;
   font-size: 16px; font-weight: 500; cursor: pointer; position: relative; text-align: left;}
 .fqp_cont .accordion input[id*="answer"] + label + div {max-height: 0; transition: all .5s; overflow: hidden; background-color: #EAEAEA; font-size: 14px; text-align: left;}
 .fqp_cont .accordion input[id*="answer"] + label + div p {display: inline-block; padding: 20px; text-align: left;}
 .fqp_cont .accordion input[id*="answer"]:checked + label + div {max-height: 100px;}
+
+/* 이용약관 페이지 */
+.terms_info {text-align: center;}
+.terms_cont {width: 900px; padding: 20px 0; display: inline-block;}
+.terms_cont h1 {font-size: 28px; font-weight: 500; text-align: left; padding: 20px 0;}
+.terms_cont p {width: 100%; text-align: left; font-size: 14px; padding: 3px 0;}
+.terms_cont p.chapter {font-size: 22px; padding: 10px 0;}
+.terms_cont p.purpose {font-size: 17px; padding: 5px 0;}
+.terms_cont p.last_cont {padding-bottom: 20px;}
