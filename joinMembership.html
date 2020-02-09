@@ -65,6 +65,10 @@
                 </span>
               </div>
               <!-- password check -->
+              <div class="pass_match">
+                <font id="chkNotice" size="2"></font>
+              </div>
+              <!-- pass_match -->
               <div class="join_row">
                 <h3 class="join_title">
                   <label for="name">이름</label>
@@ -83,14 +87,16 @@
                   <option value="" selected>선택안함</option>
                   <option value="">--------------------</option>
                   <option value="">인문융합자율학부</option>
-                  <option value="">신학과</option>
+                  <option value="">기독교문화학과</option>
                   <option value="">영어학과</option>
                   <option value="">일어일본학과</option>
                   <option value="">중어중국학과</option>
                   <option value="">--------------------</option>
                   <option value="">사회융합자율학부</option>
-                  <option value="">사회과학부</option>
                   <option value="">사회복지학과</option>
+                  <option value="">사회학과</option>
+                  <option value="">경제학과</option>
+                  <option value="">정치학과</option>
                   <option value="">경영학과</option>
                   <option value="">--------------------</option>
                   <option value="">미디어컨텐츠융합자율학부</option>
@@ -121,16 +127,16 @@
             <div class="footer_info">
               <ul>
                 <li>
-                  <a href="#">이용약관</a>
+                  <a href="service.html">이용약관</a>
                 </li>
                 <li>
-                  <a href="#">서비스 소개</a>
+                  <a href="index.html#service">서비스 안내</a>
                 </li>
                 <li>
-                  <a href="#">개발자 소개</a>
+                  <a href="index.html#developer">개발자 소개</a>
                 </li>
                 <li>
-                  <a href="index.html">워다타</a>
+                  <a href="faq.html">FAQ</a>
                 </li>
               </ul>
               <address class="">
@@ -143,5 +149,25 @@
     </footer>
     <!-- footer -->
 
+    <script src="js/jquery.min_1.12.4.js"></script>
+    <script type="text/javascript">
+      // 비밀번호 일치 여부
+      $(function(){
+        $('#pass').keyup(function(){
+          $('#chkNotice').html('');
+        });
+
+        $('#passCheck').keyup(function(){
+          if($('#pass').val() != $('#passCheck').val()){
+            $('#chkNotice').html('비밀번호 일치하지 않음');
+            $('#chkNotice').attr('color', '#FF3636');
+          }
+          else{
+            $('#chkNotice').html('비밀번호 일치함');
+            $('#chkNotice').attr('color', '#2478FF');
+          }
+        });
+      });
+    </script>
   </body>
 </html>
